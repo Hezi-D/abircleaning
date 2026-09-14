@@ -1,0 +1,349 @@
+<meta charset="utf-8">
+<title>ספר הלוגו של אביר</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F4EF; --panel:#FFFFFF; --ink:#161F1D; --muted:#5B6663;
+  --line:#E1E3DC; --gold:#AD8748; --gold-soft:#EFE3CC; --slate:#3E5D59; --slate-soft:#E4EEEC;
+  --tile-dark-bg:#161F1D; --tile-dark-fg:#F1EEE7; --tile-dark-gold:#D8B074;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#111615; --panel:#1A2120; --ink:#F1EEE7; --muted:#9BA6A2;
+    --line:#2A3332; --gold:#D8B074; --gold-soft:#332A19; --slate:#7FB0AA; --slate-soft:#1C2725;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#111615; --panel:#1A2120; --ink:#F1EEE7; --muted:#9BA6A2;
+  --line:#2A3332; --gold:#D8B074; --gold-soft:#332A19; --slate:#7FB0AA; --slate-soft:#1C2725;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Rubik',Arial,sans-serif; line-height:1.6;
+  padding-inline:max(20px,4vw); direction:rtl;
+}
+.wrap{max-width:1080px;margin:0 auto;padding-block:56px 90px}
+h1,h2{font-family:'Frank Ruhl Libre',Georgia,serif; text-wrap:balance; margin:0}
+.eyebrow{
+  font-family:'Rubik',sans-serif; font-weight:700; font-size:12.5px; letter-spacing:.08em;
+  color:var(--gold); text-transform:uppercase; margin-bottom:14px; display:flex; align-items:center; gap:10px;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--gold)}
+header.masthead{max-width:720px; margin-bottom:64px}
+h1{font-size:clamp(32px,5vw,50px); font-weight:700; line-height:1.15; margin-bottom:20px}
+.intro{font-size:16.5px; color:var(--muted); max-width:640px}
+.intro p{margin:0 0 12px}
+.brief{
+  margin-top:28px; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  padding-block:18px; display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
+}
+.brief div b{display:block; font-family:'Frank Ruhl Libre',serif; font-size:15px; font-weight:500; margin-bottom:4px}
+.brief div span{font-size:13px; color:var(--muted)}
+
+.group{margin-top:64px}
+.group-head{display:flex; align-items:baseline; gap:16px; margin-bottom:6px; flex-wrap:wrap}
+.group-num{font-family:'Frank Ruhl Libre',serif; font-size:14px; color:var(--gold); font-weight:500}
+.group-head h2{font-size:clamp(22px,3vw,28px); font-weight:500}
+.group-note{color:var(--muted); font-size:14.5px; max-width:620px; margin:10px 0 28px}
+
+.grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
+.tile{
+  background:var(--panel); border:1px solid var(--line); border-radius:14px;
+  padding:22px 14px 18px; display:flex; flex-direction:column; align-items:center; gap:14px;
+  transition:transform .18s, box-shadow .18s, border-color .18s;
+}
+.tile:hover{transform:translateY(-3px); box-shadow:0 14px 30px rgba(20,25,24,.09); border-color:transparent}
+.tile.dark{background:var(--tile-dark-bg); border-color:var(--tile-dark-bg)}
+.mark-box{width:72px; height:72px; display:flex; align-items:center; justify-content:center; color:var(--ink)}
+.tile.dark .mark-box{color:var(--tile-dark-fg)}
+.tile.dark .mark-box.gold{color:var(--tile-dark-gold)}
+.mark-box svg{width:100%; height:100%; overflow:visible}
+.tile-label{text-align:center}
+.tile-label .num{font-size:11px; color:var(--gold); font-weight:700; letter-spacing:.04em}
+.tile.dark .tile-label .num{color:var(--tile-dark-gold)}
+.tile-label .name{font-family:'Frank Ruhl Libre',serif; font-size:15.5px; font-weight:500; margin:2px 0 5px}
+.tile.dark .tile-label .name{color:var(--tile-dark-fg)}
+.tile-label .note{font-size:12px; color:var(--muted); line-height:1.45}
+.tile.dark .tile-label .note{color:#AAB4B0}
+
+.closing{
+  margin-top:74px; padding-top:34px; border-top:2px solid var(--ink);
+  display:flex; justify-content:space-between; gap:30px; flex-wrap:wrap;
+}
+.closing h3{font-family:'Frank Ruhl Libre',serif; font-weight:500; font-size:22px; margin:0 0 10px}
+.closing p{color:var(--muted); font-size:14.5px; max-width:520px; margin:0}
+.closing .tag{
+  background:var(--gold-soft); color:var(--gold); font-weight:700; font-size:12.5px;
+  padding:8px 16px; border-radius:999px; align-self:flex-start; white-space:nowrap;
+}
+
+@media (max-width:860px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .brief{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  .grid{grid-template-columns:1fr 1fr}
+  .wrap{padding-block:40px 60px}
+}
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <div class="eyebrow">מסמך עבודה · חקר כיוונים</div>
+  <h1>ספר הלוגו של אביר</h1>
+  <div class="intro">
+    <p>״אביר״ הוא גם שם החברה וגם המילה העברית לאביר-פרשים — נקודת המוצא לחלק מהכיוונים כאן. האתגר: סימן אחד שמייצג גם אחזקת מבנים (תיקונים, מערכות, עבודה עם כלים) וגם שירותי ניקיון (פוליש, ברק, טיפול בפרטים), ועדיין קריא כשהוא קטן — על רכב, מדבקת חלון או אייקון טלפון.</p>
+    <p>עשרים כיוונים, מקובצים לפי רעיון. כמה מהם מוצגים גם על רקע כהה, כפי שהם ייראו על יוניפורם או שלט חוץ.</p>
+  </div>
+  <div class="brief">
+    <div><b>שם</b><span>אביר אחזקת מבנים ושירותי ניקיון</span></div>
+    <div><b>שימושים</b><span>רכב, יוניפורם, שלט, אתר, מדבקה</span></div>
+    <div><b>תחומים</b><span>אחזקה טכנית · ניקיון · פוליש</span></div>
+  </div>
+</header>
+
+<!-- ===== GROUP A: KNIGHT ===== -->
+<section class="group">
+  <div class="group-head"><span class="group-num">01</span><h2>אבירים ומגנים</h2></div>
+  <p class="group-note">משחק ישיר על השם — סמלי הגנה, איכות ונאמנות שמתאימים גם לחברת אחזקה וגם לשירות בטוח.</p>
+  <div class="grid">
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 8 L82 20 V46 C82 70 68 84 50 92 C32 84 18 70 18 46 V20 Z"/>
+        <path d="M34 50 L45 61 L68 36" stroke-width="6"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">01</div><div class="name">מגן ואישור</div><div class="note">מגן קלאסי עם וי — פשוט, בטוח, קריא בכל גודל.</div></div>
+    </div>
+
+    <div class="tile dark">
+      <div class="mark-box gold"><svg viewBox="0 0 100 100" fill="currentColor" stroke="none">
+        <path d="M50 8 L82 20 V46 C82 70 68 84 50 92 C32 84 18 70 18 46 V20 Z" fill="none" stroke="currentColor" stroke-width="5"/>
+        <line x1="50" y1="20" x2="50" y2="88" stroke="currentColor" stroke-width="3"/>
+        <rect x="26" y="30" width="9" height="9"/><rect x="26" y="45" width="9" height="9"/>
+        <path d="M66 40 L69 50 L79 53 L69 56 L66 66 L63 56 L53 53 L63 50 Z"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">02</div><div class="name">מגן דו-ראשי</div><div class="note">חצי מבנה (חלונות), חצי ניקיון (ברק) — אותו מגן.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="currentColor">
+        <path d="M30 82 H70 V70 C70 70 60 66 58 58 C56 50 62 46 62 38 C62 28 54 20 42 20 C34 20 28 26 28 34 C28 34 24 34 22 38 C22 38 26 40 28 40 C28 46 24 50 24 56 C24 64 30 66 30 70 Z"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">03</div><div class="name">ראש הפרש</div><div class="note">רמז לכלי השחמט — ישיר יותר, למי שאוהב את הסיפור.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round">
+        <path d="M20 55 A30 30 0 0 1 80 55"/>
+        <line x1="14" y1="55" x2="86" y2="55"/>
+        <line x1="38" y1="40" x2="38" y2="52" stroke-width="5"/>
+        <line x1="50" y1="38" x2="50" y2="52" stroke-width="5"/>
+        <line x1="62" y1="40" x2="62" y2="52" stroke-width="5"/>
+        <path d="M46 18 L50 6 L54 18 Z" fill="currentColor" stroke="none"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">04</div><div class="name">כובע מגן</div><div class="note">קסדה מופשטת — הגנה ובטיחות בעבודה, בלי קלישאה.</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== GROUP B: BUILDING & MAINTENANCE ===== -->
+<section class="group">
+  <div class="group-head"><span class="group-num">02</span><h2>מבנה ותחזוקה</h2></div>
+  <p class="group-note">מדברים קודם כל על אחזקת מבנים — קווי בניין, כלי עבודה, מערכות.</p>
+  <div class="grid">
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="currentColor" stroke="none">
+        <g opacity=".55"><rect x="22" y="48" width="12" height="34"/><rect x="40" y="34" width="12" height="48"/><rect x="58" y="22" width="12" height="60"/></g>
+        <g transform="rotate(45 50 50)"><rect x="46" y="24" width="8" height="52" rx="4"/><circle cx="50" cy="22" r="9" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="50" cy="78" r="9" fill="none" stroke="currentColor" stroke-width="5"/></g>
+      </svg></div>
+      <div class="tile-label"><div class="num">05</div><div class="name">קו רקיע + מפתח</div><div class="note">בניינים ברקע, מפתח ברגה על הקדמה.</div></div>
+    </div>
+
+    <div class="tile dark">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 55 L50 20 L82 55"/>
+        <circle cx="50" cy="66" r="13"/>
+        <g stroke-width="4"><line x1="50" y1="49" x2="50" y2="42"/><line x1="63" y1="66" x2="70" y2="66"/><line x1="50" y1="83" x2="50" y2="90"/><line x1="37" y1="66" x2="30" y2="66"/>
+        <line x1="59" y1="57" x2="64" y2="52"/><line x1="59" y1="75" x2="64" y2="80"/><line x1="41" y1="75" x2="36" y2="80"/><line x1="41" y1="57" x2="36" y2="52"/></g>
+      </svg></div>
+      <div class="tile-label"><div class="num">06</div><div class="name">גג וגלגל שיניים</div><div class="note">בית פשוט עם "מנוע" תחזוקה בפנים.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3.5">
+        <rect x="20" y="20" width="60" height="60" stroke-width="5"/>
+        <line x1="40" y1="20" x2="40" y2="80"/><line x1="60" y1="20" x2="60" y2="80"/>
+        <line x1="20" y1="40" x2="80" y2="40"/><line x1="20" y1="60" x2="80" y2="60"/>
+        <path d="M70 24 L72.5 29 L78 30 L72.5 31 L70 36 L67.5 31 L62 30 L67.5 29 Z" fill="currentColor" stroke="none"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">07</div><div class="name">חלון בודד זוהר</div><div class="note">רשת חלונות של בניין — אחד מהם מבריק.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round">
+        <line x1="22" y1="80" x2="78" y2="25"/><line x1="22" y1="25" x2="78" y2="80"/>
+        <g fill="none" stroke-width="4"><circle cx="22" cy="80" r="7"/><circle cx="78" cy="25" r="7"/><circle cx="22" cy="25" r="7"/><circle cx="78" cy="80" r="7"/></g>
+      </svg></div>
+      <div class="tile-label"><div class="num">08</div><div class="name">מפתחות מוצלבים</div><div class="note">כמו חרבות אבירים — רק שאלה כלי עבודה.</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== GROUP C: CLEANING & SHINE ===== -->
+<section class="group">
+  <div class="group-head"><span class="group-num">03</span><h2>ניקיון וברק</h2></div>
+  <p class="group-note">הצד השני של העסק — פוליש, זוהר, טיפול בפרטים הקטנים.</p>
+  <div class="grid">
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round">
+        <circle cx="50" cy="50" r="34"/>
+        <circle cx="50" cy="50" r="11" fill="currentColor" stroke="none"/>
+        <g>
+          <line x1="50" y1="18" x2="50" y2="28"/><line x1="50" y1="72" x2="50" y2="82"/>
+          <line x1="18" y1="50" x2="28" y2="50"/><line x1="72" y1="50" x2="82" y2="50"/>
+          <line x1="27" y1="27" x2="34" y2="34"/><line x1="66" y1="66" x2="73" y2="73"/>
+          <line x1="73" y1="27" x2="66" y2="34"/><line x1="34" y1="66" x2="27" y2="73"/>
+        </g>
+      </svg></div>
+      <div class="tile-label"><div class="num">09</div><div class="name">מדליית זוהר</div><div class="note">שמש/ברק בתוך מסגרת עגולה — נקי ומיידי.</div></div>
+    </div>
+
+    <div class="tile dark">
+      <div class="mark-box gold"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 14 C50 14 76 50 76 68 A26 26 0 1 1 24 68 C24 50 50 14 50 14 Z"/>
+        <path d="M42 46 C50 44 56 50 50 54 C46 57 46 62 51 62" stroke-width="4"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">10</div><div class="name">טיפת פוליש</div><div class="note">טיפת מים עם תנועת ליטוש בפנים.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round">
+        <line x1="30" y1="20" x2="62" y2="62"/>
+        <line x1="52" y1="52" x2="42" y2="66"/>
+        <g stroke-width="4"><line x1="62" y1="62" x2="72" y2="86"/><line x1="62" y1="62" x2="80" y2="80"/><line x1="62" y1="62" x2="86" y2="72"/><line x1="62" y1="62" x2="88" y2="62"/><line x1="62" y1="62" x2="86" y2="52"/></g>
+      </svg></div>
+      <div class="tile-label"><div class="num">11</div><div class="name">מטאטא בקו אחד</div><div class="note">סימן מינימלי, כמעט חתימת יד.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="38" y="44" width="24" height="38" rx="6"/>
+        <rect x="44" y="32" width="12" height="12"/>
+        <rect x="40" y="20" width="20" height="10" rx="3"/>
+        <g stroke-width="4"><line x1="38" y1="24" x2="27" y2="17"/><line x1="38" y1="19" x2="26" y2="19"/><line x1="38" y1="14" x2="27" y2="9"/></g>
+      </svg></div>
+      <div class="tile-label"><div class="num">12</div><div class="name">בקבוק תרסיס</div><div class="note">ישיר וידידותי, טוב לאייקון קטן באתר.</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== GROUP D: MONOGRAMS ===== -->
+<section class="group">
+  <div class="group-head"><span class="group-num">04</span><h2>מונוגרמות</h2></div>
+  <p class="group-note">בונים על האות א׳/A — כולל גרסה מעודנת לסקיצה שכבר שלחתם.</p>
+  <div class="grid">
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round">
+        <circle cx="50" cy="50" r="40"/>
+        <line x1="50" y1="14" x2="50" y2="86" stroke-width="6"/>
+        <path d="M22 70 L38 26"/><path d="M78 70 L62 26"/>
+        <line x1="28" y1="52" x2="40" y2="52" stroke-width="4"/><line x1="60" y1="52" x2="72" y2="52" stroke-width="4"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">13</div><div class="name">עיגול מונוגרמה — מעודן</div><div class="note">אותו רעיון מהלוגו ששלחתם, בפישוט קווי.</div></div>
+    </div>
+
+    <div class="tile dark">
+      <div class="mark-box gold"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round">
+        <line x1="50" y1="16" x2="24" y2="84"/><line x1="50" y1="16" x2="76" y2="84"/>
+        <line x1="34" y1="60" x2="66" y2="60" stroke-width="9"/>
+        <path d="M42 52 L58 52 L58 64 C58 68 54 71 50 71 C46 71 42 68 42 64 Z" stroke-width="3" opacity=".9"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">14</div><div class="name">A מודגש + מגן</div><div class="note">אות עבה וסמכותית, מגן קטן משולב בצומת.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round">
+        <line x1="36" y1="20" x2="20" y2="80"/><line x1="36" y1="20" x2="52" y2="80"/><line x1="24" y1="58" x2="48" y2="58" stroke-width="4"/>
+        <line x1="56" y1="26" x2="80" y2="74"/><line x1="56" y1="60" x2="70" y2="42"/><line x1="66" y1="58" x2="80" y2="40"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">15</div><div class="name">A ו-א שלובות</div><div class="note">לטינית ועברית נפגשות באמצע — שתי שפות, חברה אחת.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="50,10 90,50 50,90 10,50"/>
+        <line x1="50" y1="30" x2="34" y2="70" stroke-width="6"/><line x1="50" y1="30" x2="66" y2="70" stroke-width="6"/>
+        <line x1="40" y1="56" x2="60" y2="56" stroke-width="5"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">16</div><div class="name">A מרובע-שוויצרי</div><div class="note">צמצום גיאומטרי, מרוחק מהסגנון הקלאסי של אחזקה.</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== GROUP E: SEALS ===== -->
+<section class="group">
+  <div class="group-head"><span class="group-num">05</span><h2>חותמות ותגים</h2></div>
+  <p class="group-note">שני עולמות בסימן אחד — למי שרוצה שהלוגו "יגיד הכול" מבלי להסביר.</p>
+  <div class="grid">
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round">
+        <circle cx="50" cy="50" r="40"/>
+        <line x1="83.0" y1="50.0" x2="90.0" y2="50.0"/><line x1="78.6" y1="66.5" x2="84.6" y2="70.0"/><line x1="66.5" y1="78.6" x2="70.0" y2="84.6"/><line x1="50.0" y1="83.0" x2="50.0" y2="90.0"/><line x1="33.5" y1="78.6" x2="30.0" y2="84.6"/><line x1="21.4" y1="66.5" x2="15.4" y2="70.0"/><line x1="17.0" y1="50.0" x2="10.0" y2="50.0"/><line x1="21.4" y1="33.5" x2="15.4" y2="30.0"/><line x1="33.5" y1="21.4" x2="30.0" y2="15.4"/><line x1="50.0" y1="17.0" x2="50.0" y2="10.0"/><line x1="66.5" y1="21.4" x2="70.0" y2="15.4"/><line x1="78.6" y1="33.5" x2="84.6" y2="30.0"/>
+        <path d="M34 52 L45 63 L68 38" stroke-width="7"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">17</div><div class="name">חותמת איכות</div><div class="note">כמו תו תקן — מקרין אמינות מהרגע הראשון.</div></div>
+    </div>
+
+    <div class="tile dark">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="82.9,31.0 82.9,69.0 50.0,88.0 17.1,69.0 17.1,31.0 50.0,12.0"/>
+        <line x1="50" y1="18" x2="50" y2="82" stroke-width="2" opacity=".5"/>
+        <path d="M25 58 L25 44 L34 36 L43 44 L43 58 Z" stroke-width="4"/>
+        <path d="M64 32 L67 42 L77 45 L67 48 L64 58 L61 48 L51 45 L61 42 Z" fill="currentColor" stroke="none"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">18</div><div class="name">תג משושה</div><div class="note">בית מצד אחד, ניקיון מהצד השני — מסגרת תעשייתית.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.5">
+        <circle cx="40" cy="50" r="30"/><circle cx="60" cy="50" r="30"/>
+        <g stroke-width="3"><line x1="24" y1="42" x2="32" y2="42"/><line x1="24" y1="50" x2="32" y2="50"/><line x1="24" y1="58" x2="32" y2="58"/></g>
+        <g stroke-width="3" fill="none"><circle cx="72" cy="50" r="6"/><circle cx="72" cy="50" r="12"/></g>
+        <circle cx="50" cy="50" r="3.5" fill="currentColor" stroke="none"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">19</div><div class="name">שני מעגלים</div><div class="note">מבנה + מים נפגשים באמצע — ון דיאגרם עדין.</div></div>
+    </div>
+
+    <div class="tile">
+      <div class="mark-box"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 62 L38 30 L50 46 L74 20"/>
+      </svg></div>
+      <div class="tile-label"><div class="num">20</div><div class="name">גג והתחייבות</div><div class="note">קו אחד רציף: שיפוע גג עובר לתנועת וי.</div></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="closing">
+  <div>
+    <h3>איך ממשיכים מכאן</h3>
+    <p>סמנו 2–3 מספרים שמדברים אליכם (גם אם מתת-קבוצות שונות) ותגובה קצרה על כל אחד — ומכאן נצייר גרסת צבע וטיפוגרפיה מלאה לכיוונים שנבחרו.</p>
+  </div>
+  <div class="tag">20 כיוונים · סבב 1</div>
+</div>
+
+</div>
