@@ -86,17 +86,17 @@ header.overlay {
   background: linear-gradient(to bottom, rgba(255,255,255,.92) 0%, rgba(255,255,255,.55) 45%, rgba(255,255,255,0) 100%);
 }
 .hero-full .fade-bottom {
-  position: absolute; bottom: 0; left: 0; right: 0; height: 62%; z-index: 1;
-  background: linear-gradient(to top, rgba(9,14,18,.82) 0%, rgba(9,14,18,.35) 55%, rgba(9,14,18,0) 100%);
+  position: absolute; bottom: 0; left: 0; right: 0; height: 68%; z-index: 1;
+  background: linear-gradient(to top, rgba(251,250,247,.96) 0%, rgba(251,250,247,.82) 40%, rgba(251,250,247,0) 100%);
 }
 .hero-full-content {
-  position: absolute; bottom: 0; right: 0; left: 0; z-index: 2; color: #fff;
+  position: absolute; bottom: 0; right: 0; left: 0; z-index: 2; color: var(--ink);
   padding: 0 max(6vw, 32px) clamp(40px, 6vw, 68px);
 }
-.hero-full-content .eyebrow { color: var(--gold-tint); }
-.hero-full-content h1 { color: #fff; font-size: clamp(38px, 5.4vw, 68px); letter-spacing: -.03em; margin: 16px 0 20px; }
-.hero-full-content p { font-size: 18px; color: #dde2e5; max-width: 580px; margin-bottom: 24px; }
-.hero-full-content .micro { color: #b9c1c6; }
+.hero-full-content .eyebrow { color: var(--gold-dark); }
+.hero-full-content h1 { color: var(--ink); font-size: clamp(38px, 5.4vw, 68px); letter-spacing: -.03em; margin: 16px 0 20px; }
+.hero-full-content p { font-size: 18px; color: var(--muted); max-width: 580px; margin-bottom: 24px; }
+.hero-full-content .micro { color: var(--muted); }
 
 /* trust bar */
 .trust { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
