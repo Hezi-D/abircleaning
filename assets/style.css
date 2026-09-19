@@ -86,8 +86,8 @@ header.overlay {
   background: linear-gradient(to bottom, rgba(255,255,255,.92) 0%, rgba(255,255,255,.55) 45%, rgba(255,255,255,0) 100%);
 }
 .hero-full .fade-bottom {
-  position: absolute; bottom: 0; left: 0; right: 0; height: 68%; z-index: 1;
-  background: linear-gradient(to top, rgba(251,250,247,.96) 0%, rgba(251,250,247,.82) 40%, rgba(251,250,247,0) 100%);
+  position: absolute; bottom: 0; left: 0; right: 0; height: 88%; z-index: 1;
+  background: linear-gradient(to top, rgba(251,250,247,.98) 0%, rgba(251,250,247,.95) 60%, rgba(251,250,247,.8) 82%, rgba(251,250,247,0) 100%);
 }
 .hero-full-content {
   position: absolute; bottom: 0; right: 0; left: 0; z-index: 2; color: var(--ink);
