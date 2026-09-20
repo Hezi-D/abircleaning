@@ -52,8 +52,8 @@ header.overlay {
   position: absolute; top: 0; left: 0; right: 0;
   background: transparent; border-bottom-color: transparent; backdrop-filter: none;
 }
-.nav { height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.brand .logo { height: 58px; width: auto; object-fit: contain; display: block; }
+.nav { height: 100px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand .logo { height: 76px; width: auto; object-fit: contain; display: block; }
 .links { display: flex; gap: 26px; font-size: 14.5px; font-weight: 700; }
 .links a { color: var(--ink); opacity: .82; transition: .2s; }
 .links a:hover, .links a.active { opacity: 1; color: var(--gold-dark); }
@@ -244,8 +244,8 @@ footer a:hover { color: var(--ink); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
-  .nav { height: 68px; }
-  .brand .logo { height: 46px; }
+  .nav { height: 84px; }
+  .brand .logo { height: 66px; }
   .actions { display: none; }
   .trust-grid, .grid-cards, .detail-grid, .process-grid { grid-template-columns: 1fr; }
   .trust-item { border-left: 0; border-bottom: 1px solid var(--line); }
